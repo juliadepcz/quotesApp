@@ -1,0 +1,16 @@
+<h1> All Quotes</h1>
+
+<%= link_to 'Add Quote', new_quote_path %>
+
+
+
+
+<table>
+ 
+ 
+  <% @quotes.each do |quote| %>
+    <tr>
+      <td><%= quote.text %></td>
+    </tr>
+  <% end %>
+</table>
